@@ -4,26 +4,37 @@ body {
     padding: 0;
 }
 
+
+/* styles.css */
+
+/* Custom styles for the chat box */
 .chat-container {
-    width: 300px;
+    width: 80%;
     margin: 20px auto;
-    border: 1px solid #ccc;
+    border: 2px solid #007bff;
     border-radius: 5px;
     padding: 10px;
+    background-color: #f0f0f0;
 }
-
+.pic{
+    display: flex;
+    justify-content: center;
+    height : 100px;
+}
 .chat {
-    height: 200px;
+    height: 500px;
     overflow-y: scroll;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
+    background-color: #fff;
 }
 
 .input-container {
     display: flex;
     justify-content: space-between;
+    align-content: end;
 }
 
 #message-input {

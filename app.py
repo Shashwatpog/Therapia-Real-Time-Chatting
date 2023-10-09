@@ -55,8 +55,10 @@ class Message(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     sender_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    sender = db.relationship('User', foreign_keys=[sender_id])
     receiver_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
     text = db.Column(db.Text, nullable=False)
+    
 
 # Configure your user loader
 @login_manager.user_loader
@@ -102,7 +104,14 @@ def index():
 @app.route('/chat', methods=['GET'])
 @login_required
 def chat():
-    return render_template('chat.html')
+    # Retrieve previous messages from the database
+    messages = Message.query.filter(
+        (Message.sender_id == current_user.id) |
+        (Message.receiver_id == current_user.id)
+    ).all()
+
+    return render_template('chat.html', messages=messages)
+
 
 # Route for sending messages
 @app.route('/send_message', methods=['POST'])

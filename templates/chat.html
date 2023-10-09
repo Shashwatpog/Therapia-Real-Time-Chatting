@@ -1,4 +1,3 @@
-<!-- chat.js -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,19 +7,24 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+    <div class= "pic">
+        <img src="{{ url_for('static', filename = 'Therapia.png') }}">
+    </div>
     <div class="chat-container">
         <div class="chat" id="chat-messages">
-            <!-- Chat messages will be displayed here -->
+            <!-- Previous messages will be displayed here -->
+        </div>
+        <div id="message-history">
+            <!-- Previous messages will be displayed here -->
         </div>
         <div class="input-container">
             <input type="text" id="message-input" placeholder="Type a message...">
             <button id="send-button">Send</button>
         </div>
     </div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script>
     <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>
-
-

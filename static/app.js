@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const chat = document.getElementById("chat");
+    const chat = document.getElementById("chat-messages");
     const messageInput = document.getElementById("message-input");
     const sendButton = document.getElementById("send-button");
     const socket = io.connect("http://127.0.0.1:5000"); // Replace with your server URL
@@ -23,13 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
             messageInput.value = "";
         }
     });
-    
 
     messageInput.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
             const messageText = messageInput.value.trim();
             if (messageText) {
-                socket.emit("message", messageText); // Send just the message text
+                socket.emit("message", { message: messageText });
                 messageInput.value = "";
             }
         }
