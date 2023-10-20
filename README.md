@@ -1,4 +1,4 @@
-# SASEhacks 2023 - Therapia App 
+# Therapia App - SASEhacks 2023
 Therapia is a journaling app that allows users to journal with AI based prompts
 The AI model then parses through the user's journal entry and recommends them groups and communities to join with similar individuals
 It also suggests activities for self care based on journal entry.
@@ -22,3 +22,4 @@ https://github.com/Shashwatpog/testAPI-calls/assets/141262519/ac2b2b40-df2a-4e7b
 
 
 Devpost demo - https://devpost.com/software/therapia-7ragx8
+Final App repository : https://github.com/judacas/SASEImmigrantsHackathon
