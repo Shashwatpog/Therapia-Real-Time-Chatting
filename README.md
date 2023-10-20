@@ -13,3 +13,10 @@ I worked on the real time chatting feature of the app for the communities and gr
     - Integrated the API with a database to store and retrieve messages.
 - API Endpoints: User registration, login, message sending, message retrieval
 
+
+
+https://github.com/Shashwatpog/testAPI-calls/assets/141262519/358c32f2-999f-4de2-a75f-18ae4ea10017
+
+
+
+Devpost demo - https://devpost.com/software/therapia-7ragx8
