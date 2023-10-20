@@ -8,14 +8,16 @@ I worked on the real time chatting feature of the app for the communities and gr
 **Real-Time Chat Feature with Flask API**
 - Developed a real-time chat application with a Flask API responsible for user registration, authentication, message storage, and real-time communication.
 - Technologies used : Python, Flask, SQLAlchemy, RESTful API design
-    - Designed and implemented RESTful API endpoints for user registration, authentication, and real-time messaging.
-    - Ensured robust security measures, including user authentication and authorization.
-    - Integrated the API with a database to store and retrieve messages.
-- API Endpoints: User registration, login, message sending, message retrieval
+- Designed and implemented RESTful API endpoints for user registration, authentication, and real-time messaging.
+- Ensured robust security measures, including user authentication and authorization.
+- Integrated the API with a database to store and retrieve messages.
 
 
 
-https://github.com/Shashwatpog/testAPI-calls/assets/141262519/358c32f2-999f-4de2-a75f-18ae4ea10017
+
+
+https://github.com/Shashwatpog/testAPI-calls/assets/141262519/ac2b2b40-df2a-4e7b-8c70-bf318b1fda12
+
 
 
 
